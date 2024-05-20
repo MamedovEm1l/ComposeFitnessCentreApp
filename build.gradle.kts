@@ -19,6 +19,8 @@ dependencies {
     // compose.desktop.currentOs should be used in launcher-sourceSet
     // (in a separate module for demo project and in testMain).
     // With compose.desktop.common you will also lose @Preview functionality
+    implementation("org.ktorm:ktorm-core:3.3.0")
+    implementation("org.ktorm:ktorm-support-postgresql:3.3.0")
     implementation("org.postgresql:postgresql:42.3.3")
     implementation(compose.desktop.currentOs)
 }
